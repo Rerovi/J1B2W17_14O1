@@ -1,0 +1,38 @@
+body {
+    background-color: lightgoldenrodyellow;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+#inputs {
+    background-color: greenyellow;
+    width: 600px;
+    height: 150px;
+    display: inline-block;
+}
+#uitkomst {
+    padding: 30px 0px;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+#uitkomst>div>div {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: white;
+}
+
+input {
+    display: inline-block;
+}
+#Cb {
+    margin-left: 20px;
+}
