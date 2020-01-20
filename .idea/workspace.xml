@@ -23,18 +23,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/js/javascript.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../Lab Kleuren buttons/js/javascript.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/../../Eindopdrachten/J1B2W13_14O1/js/adventure.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../J1B2W13_14O1/js/adventure.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1W4C3aYk8W8E03vED197rMMQ6Gb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -64,6 +64,8 @@
       <workItem from="1578783310345" duration="301000" />
       <workItem from="1578906280642" duration="3378000" />
       <workItem from="1578911570740" duration="8272000" />
+      <workItem from="1579089535474" duration="7233000" />
+      <workItem from="1579463696741" duration="3943000" />
     </task>
     <servers />
   </component>

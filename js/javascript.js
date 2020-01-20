@@ -1,3 +1,8 @@
+var test10 = wordsArray[Math.floor((Math.random() * wordsArray.length) + 0)];
+var test11 = Array.from(test10);
+console.log(test10);
+console.log(test11);
+
 var container = document.getElementById("container");
 
 var inputs = document.createElement("div");
@@ -6,14 +11,9 @@ inputs.id =  "inputs";
 container.appendChild(inputs);
 
 var words = document.createElement("p");
-words.innerHTML = "Words:";
+words.innerHTML = "Welkom bij lingo!";
 
 inputs.appendChild(words);
-
-var input1 = document.createElement("input");
-input1.id = "input1";
-
-inputs.appendChild(input1);
 
 var checkLetter = document.createElement("p");
 checkLetter.innerHTML = "Check letter:";
@@ -21,7 +21,7 @@ checkLetter.innerHTML = "Check letter:";
 inputs.appendChild(checkLetter);
 
 var input2 = document.createElement("input");
-input2.id = "input2";
+input2.id = "input2";input2
 
 inputs.appendChild(input2);
 
@@ -43,6 +43,7 @@ CheckButton.innerHTML = "Check!";
     for (var i = 1; i <= 5; i++) {
         var woordDiv = document.createElement("div");
         woordDiv.id = "letter" + i;
+        woordDiv.classList.add('row')
         woordDiv.innerHTML = ' ';
         woordDiv.style.width = "50%";
         woordDiv.style.margin = "0 auto";
@@ -56,13 +57,13 @@ CheckButton.innerHTML = "Check!";
     }
     var rij = 1
 
+document.getElementById('KURK' + rij + 1).innerHTML = test11[0];
 function Check() {
-    var woord = document.getElementById("input1").value;
+    var woord = test10;
     var letters = document.getElementById("input2").value;
     var arrayWoord = woord.split("");
     var arrayLetters = letters.split("");
 
-    // goed of fout loop (plaats)
     for (var i = 0; i < arrayWoord.length; i++) {
         document.getElementById('KURK' + rij + (i + 1)).innerHTML = letters[i];
         if (arrayLetters[i] == arrayWoord[i]) {
@@ -72,9 +73,9 @@ function Check() {
         }
     }
     if (woord === letters) {
-        var accepteren = confirm("U heeft gewonnen! Wilt u nog een keer spelen?");
-        if (accepteren){
-            window.location = window.location;
+        var gewonnen = confirm("U heeft gewonnen! Wilt u nog een keer spelen?");
+        if (gewonnen) {
+            window.location = window.location
         }
     } else {
         for (var i = 0; i < arrayWoord.length; i++) {
@@ -88,9 +89,12 @@ function Check() {
             }
         }
         rij++
-    }
+        if (rij == 6) {
+            var verloren = confirm("U heeft verloren... Wilt u het nog een keer proberen?");
+            if (verloren) {
+                window.location = window.location;
+            }
+        }
+                document.getElementById('KURK' + rij + 1).innerHTML = test11[0];
+        }
 }
-
-
-
-    // button.onclick = function () { window.location = window.location };
