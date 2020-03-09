@@ -49,7 +49,7 @@ CheckButton.innerHTML = "Check!";
         woordDiv.style.margin = "0 auto";
 
         for (var j = 1; j <= 5; j++) {
-            var test = document.createElement("DIV");
+            var test = document.createElement("div");
             test.id = "KURK" + i + j;
             woordDiv.appendChild(test);
         }
@@ -73,17 +73,19 @@ function Check() {
         }
     }
     if (woord === letters) {
-        var gewonnen = confirm("U heeft gewonnen! Wilt u nog een keer spelen?");
-        if (gewonnen) {
-            window.location = window.location
-        }
+        setTimeout(function () {
+            var gewonnen = confirm("U heeft gewonnen! Wilt u nog een keer spelen?");
+            if (gewonnen) {
+                window.location = window.location
+            }
+        },100)
     } else {
         for (var i = 0; i < arrayWoord.length; i++) {
             if (document.getElementById('KURK' + rij + (i + 1)).style.backgroundColor == 'red') {
                 var position = arrayWoord.indexOf(letters[i])
                 console.log(position)
                 if (position > -1) {
-                    document.getElementById('KURK' + rij + (i + 1)).style.backgroundColor = "yellow";
+                    document.getElementById( 'KURK' + rij + (i + 1)).style.backgroundColor = "yellow";
                     document.getElementById('KURK' + rij + (i + 1)).style.borderRadius = "50%";
                 }
             }
